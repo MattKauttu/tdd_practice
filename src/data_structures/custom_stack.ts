@@ -30,6 +30,8 @@ export class CustomStack<T> {
         } else {
             this.top = this.elements[this.elements.length - 1];
         }
+
+        // Ignoring error ts(2322) because we know that poppedElement is not undefined after checking if the stack is empty
         // @ts-ignore
         return poppedElement;
     }
