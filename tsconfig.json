@@ -5,6 +5,11 @@
         "strict": true,
         "esModuleInterop": true,
         "skipLibCheck": true,
-        "forceConsistentCasingInFileNames": true
+        "forceConsistentCasingInFileNames": true,
+        "baseUrl": "src",
+        "paths": {
+            "@data_structures/*": ["data_structures/*"],
+            "@errors/*": ["errors/*"]
+        },
     }
 }
