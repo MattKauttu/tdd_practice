@@ -4,7 +4,7 @@
   "description": "This is a practice node project designed to give me a little bit of experience working with test-driven development.",
   "main": "index.ts",
   "scripts": {
-    "start": "ts-node src/index.ts",
+    "start": "ts-node -r tsconfig-paths/register src/index.ts",
     "test": "\"jest\""
   },
   "keywords": [
@@ -20,5 +20,8 @@
     "ts-jest": "^29.0.5",
     "ts-node": "^10.9.1",
     "typescript": "^5.0.3"
+  },
+  "dependencies": {
+    "tsconfig-paths": "^4.2.0"
   }
 }
